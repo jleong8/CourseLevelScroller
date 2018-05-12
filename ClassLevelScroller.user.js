@@ -19,7 +19,7 @@
 //It's helpful on find what user is looking for quickly, save user some microseconds.
 
 //Get the table, tHead from the page with the class names.
-var wholeTable = document.getElementsByClassName('divListOfClasses').item(0);
+var coTable = document.getElementsByClassName('divListOfClasses').item(0);
 
 //In the website there are two headers. One is fixed to the table and the other one is absolute for scrolling.
 //For this project we used the absolute header to contain our implementation.
