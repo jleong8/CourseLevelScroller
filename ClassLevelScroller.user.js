@@ -11,6 +11,14 @@
 // @grant        none
 // ==/UserScript==
 
+//To use this userscript, user's will need greasemonkey or tampermonkey. Download the greasemonkey or tampermonkey plugin to your pc,
+//download this script and load it in the userscript plugin.
+//Load the webpage https://www.sis.hawaii.edu/uhdad/avail.classes?i=MAN&t=201830&s=ICS
+//This is UH ICS Spring2018 class availability webpage.
+//Run this script from the plugin (tampermonkey runs it automatically).
+//You will see no changes, because we implemented the select object to the absolute header. You have to scroll on the table
+//to make the select item visible.
+
 //This userscript replaces "Course Level" header on the class availability table with a select element.
 //Select element has options that shows the class level.
 //On the change event of the select element, value of the selectem item used as an anchor to scroll on the page.
@@ -19,10 +27,10 @@
 //Idea is clear, instead of scrolling down the page, a select item does the scrolling for the user with the desired amount,
 //It's helpful on find what user is looking for quickly, save user some microseconds.
 
-//Get the table, tHead from the page with the class names.
+//Get the table and two tr elements placed in the tHead from the page with the class names.
 var coTable = document.getElementsByClassName('divListOfClasses').item(0);
 
-//In the website there are two headers. One is fixed to the table and the other one is absolute for scrolling.
+//In the website there are two headers ('tr's in the header). One is fixed to the table and the other one is absolute for scrolling.
 //For this project we used the absolute header to contain our implementation.
 //Reason; headers are necessary on the first load of the page to understand the table.
 //Without knowing which values are course levels, users can be confused by lacking of the header.
