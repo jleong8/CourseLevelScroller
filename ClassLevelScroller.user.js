@@ -5,6 +5,7 @@
 // @description  Week 2 assignment 3 - improve user experience on UHM class availability page
 // @author       S.K.
 // @match        https://www.sis.hawaii.edu/uhdad/avail.classes?i=MAN&t=201830&s=ICS
+// @include      https://www.sis.hawaii.edu/uhdad/avail.classes?i=MAN&t=201830&s=ICS
 // @require      https://code.jquery.com/jquery-2.1.3.min.js
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js
 // @grant        none
